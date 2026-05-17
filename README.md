@@ -1,6 +1,6 @@
 # 🤖 Polymarket Trading Bot — @SEI-DDEV
 
-📞 **Contact:** 📊 Polymarket [@sei-ddev](https://polymarket.com/@sei-ddev) · 💬 Telegram [S.E.I](https://t.me/sei_dev) · 𝕏 X [S.E.I](https://x.com/ajee335)
+📞 **Contact:** 📊 Polymarket [@sei-ddev](https://polymarket.com/@sei-ddev)  ·  💬 Telegram [S.E.I](https://t.me/sei_dev)  ·  𝕏  Twitter  [S.E.I](https://x.com/ajee335)
 
 [![Polymarket trading bot — click to watch on YouTube](https://github.com/user-attachments/assets/9b45cc5b-e451-4923-8f91-335f6d627bea)](https://www.youtube.com/watch?v=4C83CNM4bE8)
 
