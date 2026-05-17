@@ -43,8 +43,6 @@ On Polymarket since **Apr 2026** (2 mo)
 └ Crypto         17 · WR 69% · -$196
 ```
 
-⚡ [TRADE ON POLYGUN](https://t.me/PolyGunSniperBot?start=ref_notfedor?0xa96993a1e5e6c7de1f26018bde812ceaec50be4a)
-
 ---
 
 ## ⚙️ How It Works
