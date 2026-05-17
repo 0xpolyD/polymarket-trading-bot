@@ -1,77 +1,72 @@
-# Polymarket Arbitrage Bot (Python)
+# 🤖 Polymarket Trading Bot — @SEI-DDEV
 
-Scans [Polymarket](https://polymarket.com) binary markets for **complement arbitrage**:
+**📞 Contact:** 📊 Polymarket [@sei-ddev](https://polymarket.com/@sei-ddev) · 💬 Telegram [S.E.I](https://t.me/sei_dev) · ▶️ Demo [YouTube](https://www.youtube.com/watch?v=4C83CNM4bE8)
 
-- **Buy both**: best ask(Yes) + best ask(No) &lt; $1 → buy both legs; one side pays $1 at resolution.
-- **Sell both**: best bid(Yes) + best bid(No) &gt; $1 → sell both legs if you hold inventory.
 
-Uses the **Gamma API** for market discovery and the **CLOB API** (`py-clob-client`) for live order books and optional execution.
+[![Polymarket trading bot — click to watch on YouTube](https://github.com/user-attachments/assets/9b45cc5b-e451-4923-8f91-335f6d627bea)](https://www.youtube.com/watch?v=4C83CNM4bE8)
 
-## Quick start
+---
 
-```bash
-cd /workspace/polymarket/sample
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-```
+## 📊 Overview
 
-### Scan only (safe default)
+<img width="890" height="296" alt="Polymarket profile — performance overview" src="https://github.com/user-attachments/assets/b2561587-4d2e-4afa-a3d9-d042354fda6e" />
 
-```bash
-python main.py --once
-```
+> ✨ **Profile refreshed** — updated display name and continued profit growth through systematic end-cycle execution.
 
-### Continuous scanning
+<img width="883" height="259" alt="Polymarket profile — P/L and activity stats" src="https://github.com/user-attachments/assets/43610899-6267-49d4-8701-852165906b1b" />
 
-```bash
-python main.py
-```
+> 📈 **Live metrics** — figures mirror the public Polymarket profile and refresh in real time. Visit [@sei-ddev](https://polymarket.com/@sei-ddev) for the current P/L curve, open positions, and full trade history.
 
-### Live trading
+---
 
-1. Fund a Polygon wallet with USDC and connect it on Polymarket.
-2. Export your private key into `.env` as `POLYMARKET_PRIVATE_KEY`.
-3. Set `EXECUTE_TRADES=true` or pass `--execute`.
+## 👤 SEI-DDev
 
-```bash
-python main.py --once --execute --min-profit 0.02
-```
+On Polymarket since **Apr 2026** (2 mo)
 
-## Configuration
+🟡 **Risky to copytrade** — -100.0% ROI/mkt · +1.0% ROI/vol
 
-See `.env.example` for all options. Important fields:
+💰 **Portfolio** $0 · **Bank** $423 · **Lifetime PnL** +$1.5K  
+📊 **5,046** markets · **WR** 72% (1862W / 735L)  
+💵 **Volume** $154.1K  
+🎯 **ROI/vol** +1.0% · **ROI/mkt** -100.0% · **profit/mkt** $0  
+📈 **Sharpe** 10.30 · **Max DD** -$118 · 🥶 **29L**  
+📐 **Median size** $30 (7.0% from bank)  
+⏱ **148/wk** · **1.6** entries/mkt (30d)
 
-| Variable | Description |
-|----------|-------------|
-| `POLYMARKET_PRIVATE_KEY` | Wallet key for signing orders |
-| `EXECUTE_TRADES` | `false` = scan only |
-| `MIN_PROFIT_PER_SHARE` | Minimum net edge per share pair |
-| `TAKER_FEE_RATE` | Fee fraction subtracted from gross edge |
-| `MAX_ORDER_USDC` | Cap per market-buy leg |
-| `SCAN_INTERVAL_SECONDS` | Loop delay |
-
-## Project layout
+**🗂 Top categories by PnL**
 
 ```
-polymarket_arb/
-  config.py      # Settings from environment
-  gamma.py       # Market discovery
-  clob.py        # Order books + trading
-  scanner.py     # Arbitrage detection
-  executor.py    # FOK market orders
-  bot.py         # Main loop
-main.py          # CLI
-tests/           # Unit tests for edge detection
+├ Up or Down    337 · WR 49% · -$4.1K
+├ Crypto Prices  40 · WR 46% · -$654
+├ Recurring      15 · WR 38% · -$368
+├ Hide From New  19 · WR 53% · -$254
+└ Crypto         17 · WR 69% · -$196
 ```
 
-## Tests
+⚡ [TRADE ON POLYGUN](https://t.me/PolyGunSniperBot?start=ref_notfedor?0xa96993a1e5e6c7de1f26018bde812ceaec50be4a)
 
-```bash
-python -m unittest discover -s tests -v
-```
+---
 
-## Risk disclaimer
+## ⚙️ How It Works
 
-Prediction-market arbitrage is competitive; displayed edges may disappear before fills. Fees, partial fills, and inventory requirements (for sell-side arb) can eliminate profit. Use scan-only mode first. This software is for education; not financial advice.
+| Step | What happens |
+|------|----------------|
+| **1. Ingest** 📡 | Pulls live **BTC/USD** and **ETH/USD** from on-chain **Chainlink** feeds — the same oracle Polymarket uses at settlement. |
+| **2. Score** 🧮 | Compares CLOB-implied probability with a short-horizon directional model in the final seconds of each candle. |
+| **3. Snipe** 🎯 | Enters **Up** or **Down** only when edge exceeds fees + slippage; size scales with confidence and time remaining. |
+| **4. Settle** ✅ | Markets auto-resolve against Chainlink; the bot rolls cleanly into the next cycle. |
+
+---
+
+## 🎯 Strategy
+
+| Principle | Detail |
+|-----------|--------|
+| **⏱️ End-cycle only** | Entries cluster in the last **30–90 seconds** of each candle, when signal is strongest and mispricing is most exploitable. |
+| **🔁 High frequency, small size** | Many small trades vs. few large ones — variance smooths across a large sample. |
+| **🌙 No overnight risk** | Every position resolves within **5** or **15** minutes. |
+| **💰 Fee-aware** | Orders fire only when expected edge clears round-trip fees and spread. |
+
+---
+
+*Built for systematic, oracle-aligned execution on short-horizon prediction markets. Past performance does not guarantee future results.*
