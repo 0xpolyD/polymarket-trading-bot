@@ -22,13 +22,13 @@
 
 On Polymarket since **Apr 2026** (2 mo)
 
-💰 Portfolio $0 · Bank $674 · Lifetime PnL +$1.7K
-📊 5046 markets · WR 72% (1862W/735L)
-💵 volume $154.1K
-🎯 ROI/vol +1.1% · ROI/mkt -100.0% · profit/mkt $0
-📈 Sharpe 10.50 · Max DD -$118
-📐 median size $30 (4.4% from bank)
-⏱️ 161/wk · 1.6 entries/mkt (30d)
+💰 **Portfolio** $0 · **Bank** $674 · **Lifetime PnL** +$1.7K  
+📊 **5,046** markets · **WR** 72% (1862W / 735L)  
+💵 **Volume** $154.1K  
+🎯 **ROI/vol** +1.1% · **ROI/mkt** -100.0% · **profit/mkt** $0  
+📈 **Sharpe** 10.50 · **Max DD** -$118 · 🥶 **29L**  
+📐 **Median size** $30 (4.4% from bank)  
+⏱ **161/wk** · **1.6** entries/mkt (30d)
 
 **🗂 Top categories by PnL**
 
