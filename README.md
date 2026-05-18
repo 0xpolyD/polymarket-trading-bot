@@ -1,4 +1,5 @@
 # 🤖 Polymarket Trading Bot — @SEI-DDEV
+An open-source and strategy Polymarket trainding bot automated prediction market trading, this bot supports
 
 📞 **Contact:** 📊 Polymarket [@sei-ddev](https://polymarket.com/@sei-ddev)  ·  💬 Telegram [S.E.I](https://t.me/sei_dev)  ·  𝕏  Twitter  [S.E.I](https://x.com/ajee335)
 
