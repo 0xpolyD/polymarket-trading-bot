@@ -22,24 +22,22 @@
 
 On Polymarket since **Apr 2026** (2 mo)
 
-🟡 **Risky to copytrade** — -100.0% ROI/mkt · +1.0% ROI/vol
-
-💰 **Portfolio** $0 · **Bank** $423 · **Lifetime PnL** +$1.5K  
-📊 **5,046** markets · **WR** 72% (1862W / 735L)  
-💵 **Volume** $154.1K  
-🎯 **ROI/vol** +1.0% · **ROI/mkt** -100.0% · **profit/mkt** $0  
-📈 **Sharpe** 10.30 · **Max DD** -$118 · 🥶 **29L**  
-📐 **Median size** $30 (7.0% from bank)  
-⏱ **148/wk** · **1.6** entries/mkt (30d)
+💰 Portfolio $0 · Bank $674 · Lifetime PnL +$1.7K
+📊 5046 markets · WR 72% (1862W/735L)
+💵 volume $154.1K
+🎯 ROI/vol +1.1% · ROI/mkt -100.0% · profit/mkt $0
+📈 Sharpe 10.50 · Max DD -$118
+📐 median size $30 (4.4% from bank)
+⏱️ 161/wk · 1.6 entries/mkt (30d)
 
 **🗂 Top categories by PnL**
 
 ```
-├ Up or Down    337 · WR 49% · -$4.1K
-├ Crypto Prices  40 · WR 46% · -$654
-├ Recurring      15 · WR 38% · -$368
-├ Hide From New  19 · WR 53% · -$254
-└ Crypto         17 · WR 69% · -$196
+├ Up or Down 323 · WR 49% · -$5.4K
+├ Crypto Prices 40 · WR 43% · -$786
+├ Hide From New 19 · WR 53% · -$381
+├ Recurring 13 · WR 36% · -$379
+└ Crypto 19 · WR 56% · -$348
 ```
 
 ---
