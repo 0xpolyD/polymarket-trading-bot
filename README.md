@@ -19,6 +19,27 @@ An open-source and strategy Polymarket trainding bot automated prediction market
 
 ---
 
+## ⚙️ How It Works
+
+| Step | What happens |
+|------|----------------|
+| **1. Ingest** 📡 | Pulls live **BTC/USD** and **ETH/USD** from on-chain **Chainlink** feeds — the same oracle Polymarket uses at settlement. |
+| **2. Score** 🧮 | Compares CLOB-implied probability with a short-horizon directional model in the final seconds of each candle. |
+| **3. Snipe** 🎯 | Enters **Up** or **Down** only when edge exceeds fees + slippage; size scales with confidence and time remaining. |
+| **4. Settle** ✅ | Markets auto-resolve against Chainlink; the bot rolls cleanly into the next cycle. |
+
+### Advantage of bot
+<img width="807" height="334" alt="image" src="https://github.com/user-attachments/assets/bc7815c4-ae56-4a97-bcf0-107cbcd94aa7" />
+
+The bot is not chasing overpriced entries or relying on aggressive momentum buying. Instead, it focuses on entering positions at relatively low prices, which creates a far more efficient risk-to-reward structure.
+
+> Lower entry prices increase potential upside
+
+> Smaller downside exposure when trades fail
+---
+
+
+
 ## 👤 SEI-DDev
 
 On Polymarket since **Apr 2026** (2 mo)
@@ -40,20 +61,7 @@ On Polymarket since **Apr 2026** (2 mo)
 ├ Recurring 13 · WR 36% · -$379
 └ Crypto 19 · WR 56% · -$348
 ```
-
 ---
-
-## ⚙️ How It Works
-
-| Step | What happens |
-|------|----------------|
-| **1. Ingest** 📡 | Pulls live **BTC/USD** and **ETH/USD** from on-chain **Chainlink** feeds — the same oracle Polymarket uses at settlement. |
-| **2. Score** 🧮 | Compares CLOB-implied probability with a short-horizon directional model in the final seconds of each candle. |
-| **3. Snipe** 🎯 | Enters **Up** or **Down** only when edge exceeds fees + slippage; size scales with confidence and time remaining. |
-| **4. Settle** ✅ | Markets auto-resolve against Chainlink; the bot rolls cleanly into the next cycle. |
-
----
-
 ## 🎯 Strategy
 
 | Principle | Detail |
